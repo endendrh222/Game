@@ -1,0 +1,19 @@
+package ch07.sec04.exam01;
+
+public class ComputerExample {
+
+	public static void main(String[] args) {
+		int r = 10;
+		Calculator claculator = new Calculator();
+		
+		System.out.println("원 면적 : " + claculator.areaCircle(r));
+		System.out.println();
+		
+		//!중요! 메소드 오버라이딩이 되었다면 자식클래스의 메소드가 우선적으로 사용
+		Computer computer = new Computer();
+		System.out.println("원 면적 : " + computer.areaCircle(r));
+		
+		}
+	}
+
+
